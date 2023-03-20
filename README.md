@@ -21,7 +21,7 @@ To install and run the application, follow these steps:
 git clone https://github.com/etsond/badBreak.git
 ```
 2. Open the index.html file in your web browser.
-Credits
+### Credits
 This project was created by Etson. If you have any questions or comments, please feel free to contact me.
 
 The quotes used in this application are provided by the Breaking Bad API.
