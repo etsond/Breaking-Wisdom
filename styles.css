@@ -1,0 +1,73 @@
+/* Set background color and font */
+body {
+    background-color: #232323;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* Style the button */
+.quote-button {
+    background-color: #32a852;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quote-button:hover {
+    background-color: #2b8a48;
+}
+
+/* Style the quote container */
+.quote-container {
+    margin-top: 32px;
+    border-left: 8px solid #32a852;
+    padding: 16px;
+    font-size: 24px;
+}
+
+/* Style the quote and author text */
+.quote {
+    margin-bottom: 16px;
+}
+
+.author {
+    font-style: italic;
+}
+
+/* /breaking bad */
+.breaking-bad-logo {
+    content: url('./images/break.png');
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 16px auto;
+}
+
+.hisenberg-image {
+    content: url('./images/hisenberg.png');
+    display: block;
+    width: 5%;
+    max-width: 600px;
+    height: auto;
+    margin: 16px auto;
+}
+
+/* Make the page responsive */
+@media only screen and (max-width: 600px) {
+    .quote-container {
+        font-size: 18px;
+    }
+
+    .breaking-bad-logo {
+        max-width: 100px;
+    }
+
+    .hisenberg-image {
+        max-width: 300px;
+    }
+}

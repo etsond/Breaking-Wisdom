@@ -1,17 +1,14 @@
+document.querySelector(".quote-button").addEventListener("click", getQuote);
 
-document.querySelector("button").addEventListener("click", getQuote)
-
-function getQuote(){
-// let amount = document.querySelector("input").value
-fetch("https://api.breakingbadquotes.xyz/v1/quotes")
-    .then(res => res.json())
-    .then(data => {
-        document.querySelector("h3").innerText = data[0].quote
-        document.querySelector("span").innerText = data[0].author
+function getQuote() {
+  fetch("https://api.breakingbadquotes.xyz/v1/quotes")
+    .then((res) => res.json())
+    .then((data) => {
+      document.querySelector(".quote").innerText = data[0].quote;
+      document.querySelector(".author").innerText = data[0].author;
     })
-    .catch(err => {
-        console.log(`err ${err}`)
-    })
-
+    .catch((err) => {
+      console.log(`err ${err}`);
+    });
 }
 
